@@ -48,7 +48,7 @@ navbar.classList.remove('active');
 /*========================scroll reveal ========================*/
 
 ScrollReveal({ 
-    // reset: true,
+    reset: true,
     distance: '80px',
     duration: 2000,
     delay: 200
@@ -63,9 +63,23 @@ ScrollReveal().reveal('.home-content p, .about-content', { origin:'right' });
 /*========================Typed js reveal ========================*/
 
 const typed = new Typed('.multiple-text', {
-    strings: ['Junior Web Developer..', 'Web Designer..', 'Youtuber..', 'Free Thinker..', 'Goal Archiver!'],
+    strings: ['Web Developer..', 'Web Designer..', 'Free Thinker..', 'Goal Archiver!'],
     typeSpeed:50,
     backSpeed:50,
     backDelay:1000,
     loop: true
-})
+});
+
+// function sendEmail(){
+//     Email.send({
+//         Host : "smtp.gmail.com",
+//         Username : "corb.andrei96@gmail.com",
+//         Password : "724D907C5BC9F0FF416863BD37D8B995C1CE",
+//         To : 'thecryptohub2022@gmail.com',
+//         From : document.getElementById("email").value,
+//         Subject : "New contact form enquiry",
+//         Body : "And this is the body"
+//     }).then(
+//     message => alert(message)
+//     );
+// }
