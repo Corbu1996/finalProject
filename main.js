@@ -70,16 +70,16 @@ const typed = new Typed('.multiple-text', {
     loop: true
 });
 
-// function sendEmail(){
-//     Email.send({
-//         Host : "smtp.gmail.com",
-//         Username : "corb.andrei96@gmail.com",
-//         Password : "724D907C5BC9F0FF416863BD37D8B995C1CE",
-//         To : 'thecryptohub2022@gmail.com',
-//         From : document.getElementById("email").value,
-//         Subject : "New contact form enquiry",
-//         Body : "And this is the body"
-//     }).then(
-//     message => alert(message)
-//     );
-// }
+function sendEmail(){
+    Email.send({
+        Host : "smtp.gmail.com",
+        Username : "corb.andrei96@gmail.com",
+        Password : "724D907C5BC9F0FF416863BD37D8B995C1CE",
+        To : 'thecryptohub2022@gmail.com',
+        From : document.getElementById("email").value,
+        Subject : "New contact form enquiry",
+        Body : "And this is the body"
+    }).then(
+    message => alert(message)
+    );
+}
